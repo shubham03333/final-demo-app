@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  demodb:
+    build: ./db/
+
+  product-service:
+    build: ./backend/product-service/
+    ports:
+      - 4001:4000
+
+  category-service:
+    build: ./backend/category-service/
+    ports:
+      - 4002:4000
+
+  # frontend:
+  #   build: ./frontend/frontend/
+  #   ports:
+  #     - 80:80

@@ -5,6 +5,7 @@ const app = express()
 app.use(cors('*'))
 app.use(express.json())
 
+// app.use('/categor)
 // add the routers
 const routerProduct = require('./routes/product')
 app.use('/product', routerProduct)
